@@ -8,8 +8,11 @@
             <meta name="description" content="" />
             <meta name="Taufiq" content="" />
             <title>Blood Cancer Stage Detection</title>
+            <!-- Core theme CSS (includes Bootstrap)-->
+            <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />     <!--RELINKED-->
+
             <!-- Bootstrap CDN CSS-->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
             <!-- Favicon-->
             <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico')}}" /> <!--RELINKED-->
             <!-- Font Awesome icons (free version)-->
@@ -17,12 +20,43 @@
             <!-- Google fonts-->
             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
             <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-            <!-- Core theme CSS (includes Bootstrap)-->
-            <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />     <!--RELINKED-->
+            
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+
+
+
+            <!-- NOTE BOOK -->
+            <!-- Loading mathjax macro -->
+            <!-- Load mathjax -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+            
+            
+            <!-- MathJax configuration -->
+            <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true,
+                    processEnvironments: true
+                },
+                // Center justify equations in code and markdown cells. Elsewhere
+                // we use CSS to left justify single line equations in code cells.
+                displayAlign: 'center',
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 0}},
+                    linebreaks: { automatic: true }
+                }
+            });
+            </script>
+            <!-- End of mathjax configuration -->
+
+
         </head>
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-info text-uppercase fixed-top navbar-fixed-top" id="mainNav">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-info text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Blood Cancer Stage Detection</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-dark text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +72,7 @@
                 </div>
             </div>
         </nav>
-    
+
 
     
 {% block body %} 
@@ -53,12 +87,9 @@
 
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-                
-            <small>Contributed by - Md. Taufiqul Haque Khan Tusar (Machine Leanring, Back-End, Front-End) and Bishwajeet Deb (Front-End)</small>
-                 
-            <br><small>Copyright &copy; Md. Taufiqul Haque Khan Tusar</small>
                    
             <p>Connect Me @ <a href="https://github.com/Muhammad-Taufiq-Khan">GitHub</a> | <a href="https://www.linkedin.com/in/taufiq-khan-tusar/">linkedin</a> | tafiqkhantusar@gmail.com</p>
+            <small>Copyright &copy; Md. Taufiqul Haque Khan Tusar</small>
                  
         </div>
 
