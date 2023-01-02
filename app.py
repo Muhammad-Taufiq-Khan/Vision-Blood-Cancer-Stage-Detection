@@ -5,7 +5,7 @@ UPLOAD_FOLDER = 'static/images/'
 
 #Create an app object using the Flask class. 
 app = Flask(__name__, static_folder="static")
-app.debug=True 
+app.debug=False 
 
 # routes
 @app.route("/home")
