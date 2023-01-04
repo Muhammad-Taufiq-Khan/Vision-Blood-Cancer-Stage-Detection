@@ -5,11 +5,11 @@
 - Supporting Algorithm: MobileNet V2
 ---
 
- **1. Project Objective**
+## **1. Project Objective**
 
 In this project we have diagnosed a type of blood cancer that is known as Leukemia. The most dangerous and deadly type of leukemia is acute lymphoblastic leukemia (ALL), which affects people of all age groups, including children and adults. In this project, we develop an automated system to detect various-shaped ALL blast cells from microscopic blood smears images using multiple Deep Neural Networks (DNN). The system can detect four stages of ALL by analyzing blood cells with an accuracy of 98 percent. Moreover, we have developed a telediagnosis software to provide real-time support to diagnose current stages from microscopic blood smears images. Applied algorithms are MobileNet V2, ConvNet, VGG19, and ResNet50.
   
-**2. Expalaination of the directory tree**
+## **2. Expalaination of the directory tree**
 ```
 - Notebooks       : Google colab notebooks and dataset to train the Machine Learning model.
 - models_dump     : Saved/dumped best models's objects.
@@ -21,7 +21,7 @@ In this project we have diagnosed a type of blood cancer that is known as Leukem
 - reqirements.txt : Required dependencies list with preferred version.
 ```
 
-**3. Dataset Description**
+## **3. Dataset Description**
 
 We have used the Acute Lymphoblastic Leukemia (ALL) Image dataset. The images of this 
 dataset were prepared in the Bone Marrow Laboratory of Taleqani Hospital 
@@ -41,28 +41,55 @@ respectively.
 
 ![image](https://user-images.githubusercontent.com/70132613/210604781-0e333d2f-5cd9-4a04-8d33-6c69a052aec1.png)
 
-***Fig. 3.1.1 Benign (hematogone) cells***
+*Fig. 3.1.1 Benign (hematogone) cells*
 
 ![image](https://user-images.githubusercontent.com/70132613/210604861-16ad7986-5be4-45fb-ac32-ce274d68cd43.png)
 
-***Fig. 3.1.2 Early Pre-B ALL cells***
+*Fig. 3.1.2 Early Pre-B ALL cells*
 
 ![image](https://user-images.githubusercontent.com/70132613/210604952-45a48329-894f-4821-81aa-4b622288d7ce.png)
 
-***Fig. 3.1.3 Pre-B ALL cells***
+*Fig. 3.1.3 Pre-B ALL cells*
 
 ![image](https://user-images.githubusercontent.com/70132613/210605239-7da9398f-73d7-47db-8882-d4283791a427.png)
 
-***Fig. 3.1.4 Pro-B ALL cells***
+*Fig. 3.1.4 Pro-B ALL cells*
 
-**4. Method Workflow**
+
+## **4. Method Workflow**
 
 ![image](https://user-images.githubusercontent.com/70132613/210605295-b16ff6d0-7284-4ea4-be04-6a08300c140c.png)
 
 
+##  **5. Algorithm performance**
 
- **3. WebApp Interface**
+*Fig. 5.1.1 Result of the MobileNetV2 model*
+
+![image](https://user-images.githubusercontent.com/70132613/210606086-0e2c5087-06fb-4db0-9c5c-e7894bec28a2.png)
+
+*Fig. 5.1.2 Training accuracy vs validation accuracy of the MobileNetV2 model*
+
+![image](https://user-images.githubusercontent.com/70132613/210606278-0e5678cc-bc37-4b18-b708-5b03f1b1f7a5.png)
+
+*Fig. 5.1.3 Training loss vs validation loss of the MobileNetV2 model*
+
+![image](https://user-images.githubusercontent.com/70132613/210606491-b2cdc3cf-3774-47d1-97a8-da71098dab4d.png)
+
+
+
+ ## **6. WebApp Interface**
  
- - *Home page*
+ - ***Home page***
  
+ ![image](https://user-images.githubusercontent.com/70132613/210606731-f4d2c8ac-5cff-4394-8a83-628f4a51288a.png)
+
+- ***Form to take blood sample image***
+
+![image](https://user-images.githubusercontent.com/70132613/210607028-443419f8-9273-425a-a75f-d5165a2da2e9.png)
+
+- ***Analyzed result***
+
+![image](https://user-images.githubusercontent.com/70132613/210607716-fa046ef0-5fcb-40f9-a803-46672358a0cc.png)
+
+
  
